@@ -1,7 +1,7 @@
 import {Pressable, StyleSheet, Text, View} from 'react-native';
 import React from 'react';
 import Connexion from './component/connexion';
-import {createStackNavigator} from '@react-navigation/stack';
+
 import {createDrawerNavigator} from '@react-navigation/drawer';
 import Inscription from './component/inscription';
 import {NavigationContainer} from '@react-navigation/native';
@@ -10,16 +10,6 @@ import Favoris from './component/Favoris';
 import Catalogue from './component/Catalogue';
 
 const Drawer = createDrawerNavigator();
-const Stack = createStackNavigator();
-function Button() {
-  return (
-    <Pressable onPress={console.log('clique')}>
-      <Text>CLique</Text>
-    </Pressable>
-  );
-}
-
-
 
 function Menu() {
   return (

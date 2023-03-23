@@ -1,7 +1,7 @@
 import Categorie from "../models/Categories";
 import Manga from "../models/Manga";
 
-export const Categories = [
+export const CATEGORIE = [
     new Categorie('A', 'Aventure','#f5428d'),
     new Categorie('B', 'Action','#47fced'),
     new Categorie('C', 'Combat','#b9ffb0'),
