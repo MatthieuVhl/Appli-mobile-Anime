@@ -1,15 +1,14 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
+import CategorieScreen from '../screen/CategorieScreen'
 
 
-export default function Catalogue({data}) {
-  return data.map((item,i)=>(
-    <View key={i} style={styles.CatalogueItem}>
-        <Text style={styles.Text}>{item}</Text>
-    </View>
+export default function Catalogue({}) {
+  return (
+  <CategorieScreen/>
   )
   
-  )
+  
 }
 
 const styles = StyleSheet.create({

@@ -14,9 +14,9 @@ const Drawer = createDrawerNavigator();
 function Menu() {
   return (
     <Drawer.Navigator>
+      <Drawer.Screen name="Accueil" component={Accueil} />
       <Drawer.Screen name="Connexion"component={Connexion}/>
       <Drawer.Screen name="Inscription" component={Inscription} />
-      <Drawer.Screen name="Accueil" component={Accueil} />
       <Drawer.Screen name="Manga" component={Catalogue} />
       <Drawer.Screen name="Favoris" component={Favoris} />
       
