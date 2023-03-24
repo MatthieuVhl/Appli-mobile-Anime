@@ -7,10 +7,10 @@ export default function MangaItem({ id, title, imageUrl, saisons, episodes, deta
     const navigation = useNavigation()
     return (
         <View style={styles.Anime}>
-            <Pressable  style={({ pressed }) => (pressed ? styles.buttonPressed : null)} onPress={() => navigation.navigate("MealDetail", { mealId : id})}>
+            <Pressable  style={({ pressed }) => (pressed ? styles.buttonPressed : null)} onPress={() => navigation.navigate("AnimeView", { categorieId : id})}>
                 <View style={styles.innerContainer}>
                     <View>
-                        <Image source={{ uri: imageUrl }} style={styles.image} />
+                        <Image source={{ url: imageUrl }} style={styles.image} />
                         <Text style={styles.title}>{title}</Text>
                     </View>
                     <MealDetails
