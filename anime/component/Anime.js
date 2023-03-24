@@ -14,9 +14,9 @@ export default function MangaItem({ id, title, imageUrl, saisons, episodes, deta
                         <Text style={styles.title}>{title}</Text>
                     </View>
                     <MealDetails
-                        duration={saisons}
-                        affordability={episodes}
-                        complexity={detail}
+                        saisons={saisons}
+                        episodes={episodes}
+                        detail={detail}
                     />
                 </View>
             </Pressable>

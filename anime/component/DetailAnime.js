@@ -4,7 +4,7 @@ import React from 'react'
 export default function Detail({ saisons, episodes, details }) {
     return (
         <View style={styles.details}>
-            <Text style={styles.detailItem}>{saisons}m</Text>
+            <Text style={styles.detailItem}>{saisons}</Text>
             <Text style={styles.detailItem}>
                 {episodes.toUpperCase()}
             </Text>
